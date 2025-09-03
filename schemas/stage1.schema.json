@@ -1,0 +1,6 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Stage1 Career List",
+  "type": "array",
+  "items": { "$ref": "career.schema.json" }
+}

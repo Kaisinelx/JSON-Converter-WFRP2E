@@ -1,0 +1,36 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "career.schema.json",
+  "title": "NeutralCareer",
+  "type": "object",
+  "required": ["id", "name", "type", "description", "stats"],
+  "additionalProperties": false,
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "name": { "type": "string", "minLength": 1 },
+    "type": { "type": "string", "enum": ["basic", "advanced"] },
+    "careerClass": { "type": "string" },
+    "description": { "type": "string" },
+    "stats": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "WS": { "type": "number" }, "BS": { "type": "number" },
+        "S": { "type": "number" },  "T": { "type": "number" },
+        "Ag": { "type": "number" }, "Int": { "type": "number" },
+        "WP": { "type": "number" }, "Fel": { "type": "number" },
+        "A": { "type": "number" },  "W": { "type": "number" },
+        "SB": { "type": "number" }, "TB": { "type": "number" },
+        "M": { "type": "number" },  "Mag": { "type": "number" },
+        "IP": { "type": "number" }, "FP": { "type": "number" }
+      }
+    },
+    "skillsRaw":   { "type": "string" },
+    "talentsRaw":  { "type": "string" },
+    "trappingsRaw":{ "type": "string" },
+    "entriesRaw":  { "type": "string" },
+    "exitsRaw":    { "type": "string" },
+    "notes":       { "type": "string" },
+    "source":      { "type": "string" }
+  }
+}
