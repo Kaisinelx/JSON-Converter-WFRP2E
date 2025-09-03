@@ -1,0 +1,13 @@
+# Python
+__pycache__/
+*.pyc
+
+# Virtual environment
+.venv/
+
+# VSCode settings
+.vscode/
+
+# Optional: ignore generated output files if you don’t want them in Git
+# (uncomment to activate)
+# output/*.json
